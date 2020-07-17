@@ -1,13 +1,15 @@
 package com.academy.javabasics.session4;
 
+import java.util.Scanner;
+
 public class MethodPractice {
 
 	public static void main(String[] args) {
-		//create a Scanner object here
+		Scanner kb = new Scanner(System.in);
 		double input = 0;
 		do {
 			System.out.print("Enter a number (negative to end): ");
-			input = //get the input from Scanner
+			input = Double.valueOf(kb.nextLine());
 			if (input >= 0) {
 				double negRoot = negativeSqrt(input);
 				System.out.println("The negative square root of " 
@@ -16,7 +18,7 @@ public class MethodPractice {
 		}while (input >= 0);
 	}
 	
-	//create the negativeSqrt method here
-	//accept a double parameter and return a double
-	//that's just the negation of the normal Math.sqrt method.
+	public static double negativeSqrt(double in) {
+		return -Math.sqrt(in);
+	}
 }
