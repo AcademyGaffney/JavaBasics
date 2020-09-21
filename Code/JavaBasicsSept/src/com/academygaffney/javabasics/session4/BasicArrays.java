@@ -18,7 +18,8 @@ public class BasicArrays {
 	}
 	
 	public static void main(String [] args) {
-		
+		double myArr [] = {4, 9, 3, 4, 2};
+		average(myArr);
 	}
 
 }
